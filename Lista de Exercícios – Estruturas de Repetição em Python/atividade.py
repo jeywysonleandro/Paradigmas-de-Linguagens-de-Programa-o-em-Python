@@ -102,3 +102,25 @@ fatorial = 1
 for i in range(1, n+1):
  fatorial *= i
 print("Fatorial:", fatorial)
+
+#15.Sequêncial de Fibonacci
+
+a, b = 0, 1
+for _ in range(15):
+ print(a)
+a, b = b, a + b
+
+#16.Números Ímpares
+
+limite = int(input("Digite o limite: "))
+for i in range(1, limite+1, 2):
+ print(i)
+
+ #17.Adivinhação
+
+ import random
+n = random.randint(1, 20)
+palpite = 0
+while palpite != n:
+ palpite = int(input("Adivinhe o número (1-20): "))
+print("Parabéns! Você acertou.")
