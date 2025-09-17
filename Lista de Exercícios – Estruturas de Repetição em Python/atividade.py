@@ -124,3 +124,43 @@ palpite = 0
 while palpite != n:
  palpite = int(input("Adivinhe o número (1-20): "))
 print("Parabéns! Você acertou.")
+
+#18. Palíndromo
+
+palavra = input("Digite uma palavra: ").lower()
+
+if palavra == palavra[::-1]:
+    print("É um palíndromo")
+else:
+    print("Não é um palíndromo")
+
+#19.Múltiplos de 3 e 5
+
+for i in range(1, 101):
+ if i % 3 == 0 and i % 5 == 0:
+  print(i)
+
+#20.Menu Interativo
+
+while True:
+    print("1. Somar números")
+    print("2. Calcular média")
+    print("3. Sair")
+
+    opcao = input("Escolha uma opção: ")
+
+    if opcao == "1":
+        a = float(input("Digite o primeiro número: "))
+        b = float(input("Digite o segundo número: "))
+        print("Soma:", a + b)
+
+    elif opcao == "2":
+        notas = [float(input("Digite uma nota: ")) for _ in range(2)]
+        print("Média:", sum(notas) / 2)
+
+    elif opcao == "3":
+        print("Saindo...")
+        break
+
+    else:
+        print("Opção inválida")
